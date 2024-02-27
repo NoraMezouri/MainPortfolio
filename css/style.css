@@ -48,8 +48,9 @@ header {
     position: relative;
     z-index: -1;
     background: url(../images/cat3d.PNG);
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
     height: fit-content;
     display: flex;
     flex-direction: column;

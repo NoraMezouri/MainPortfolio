@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     background: rgb(23, 23, 28);
     color: #e7e5df;
     overflow-x: hidden;
@@ -40,20 +40,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .home {
     font-size: 30px;
     position: relative;
     z-index: -1;
+    background-color: rgb(43, 44, 51);
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-shadow: 0px 0px 5px black;
-    background: rgb(6, 11, 41);
-    background: linear-gradient(190deg, rgba(6, 11, 41, 1) 0%, rgba(20, 33, 59, 1) 50%, rgba(39, 60, 74, 1) 100%);
+    background: 
+    background-size: cover;
     overflow: hidden;
     width: 100%;
 }
@@ -126,8 +128,7 @@ header {
     max-width: 700px;
     line-height: 30px;
     padding-left: 40px;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(0.5rem, 3vw, 1em);
 }
 
 .about .description img {
@@ -135,71 +136,18 @@ header {
 }
 
 .about tr {
-    border-bottom: 5px solid #e7e5df;
+    border-bottom: 1px solid #e7e5df;
 }
 
 .about td {
     padding: 30px 40px;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: clamp(0.5rem, 3vw, 1em);
 }
 
 /* portfolio */
 .portfolio {
     display: flex;
-}
-
-.portfolio .artForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 90%;
-    width: 100%;
-}
-
-.portfolio article {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.portfolio article figure {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.portfolio article img {
-    width: 100%;
-}
-
-.portfolio a {
-    text-decoration: none;
-    color: #e7e5df;
-    text-align: center;
-    transition: 1s ease-out;
-    border-bottom: 2px transparent solid;
-}
-
-.portfolio a h3 {
-    font-size: 25px;
-    margin: 20px;
-}
-
-.portfolio a:hover {
-    background: rgba(23, 23, 28, 0.5);
-    box-shadow: 0px 0px 30px rgb(23, 23, 28, 0.5);
-}
-
-.portfolio a:hover span {
-    transition: 1s ease-in;
-    border-bottom: 2px #e7e5df solid;
-
 }
 
 /* contact */
@@ -258,13 +206,13 @@ header {
 }
 
 .contact span {
-    font-size: clamp(1rem, 2vw, 6rem);
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
 }
 
 .contact a {
     color: #e7e5df;
     text-decoration: none;
-    font-size: clamp(1rem, 4vw, 6rem);
+    font-size: clamp(1rem, 4vw, 2rem);
     display: block;
     padding: 0px 20px 20px 20px;
 }
@@ -312,7 +260,7 @@ header {
 
     .about .description p {
         display: inline;
-        font-size: 10px;
+       /* font-size: 10px; */
         line-height: normal;
         padding-left: 0px;
         padding-top: 20px;
@@ -331,17 +279,10 @@ header {
         flex-direction: column;
     }
 
-    .portfolio .contact a {
-        font-size: 20px;
-    }
-
-    .contact span {
-        font-size: 15px;
-    }
-
 }
 
 /* star header */
+/*
 .stars::before {
     content: "";
     position: absolute;
@@ -377,7 +318,7 @@ header {
 .stars:nth-child(4)::before {
     transform: scale(0.5) rotate(20deg);
 }
-
+*/
 /* animations */
 
 .ommig, figure {

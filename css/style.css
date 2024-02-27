@@ -47,7 +47,9 @@ header {
     font-size: 30px;
     position: relative;
     z-index: -1;
-    background-color: rgb(43, 44, 51);
+    background: url(../images/cat3d.PNG);
+    background-position: center;
+    background-size: cover;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -218,15 +220,21 @@ header {
 
 
 .contact .info {
-    border: solid 2px;
-    transition: 0.5s linear;
     border-image: linear-gradient(transparent 30%, transparent 80%) 10;
 }
-
 .contact .info:hover {
-    border: solid 2px;
-    transition: 0.5s linear;
+    animation: contactLink 0.5s ease-in;
     border-image: linear-gradient(#e7e5df 30%, transparent 80%) 10;
+}
+@keyframes contactLink {
+    0%{
+        border: solid 2px;
+        border-image: linear-gradient(transparent 30%, transparent 80%) 10;
+    }
+    100%{
+        border: solid 2px;
+        border-image: linear-gradient(#e7e5df 30%, transparent 80%) 10;
+    }
 }
 
 @media screen and (max-width: 700px) {

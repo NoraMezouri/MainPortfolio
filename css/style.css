@@ -150,6 +150,15 @@ header {
 /* portfolio */
 .portfolio {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.portfolio .portfolioTable tr{
+    border-bottom: 1px solid #fff;
+    padding: 25px 10px;
+}
+.portfolio .portfolioTable tr td:first-of-type{
+    background: red;
 }
 
 /* contact */

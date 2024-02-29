@@ -352,3 +352,6 @@ header {
         opacity: 1;
     }
 }
+.smallimg{
+    width: 300px;
+}

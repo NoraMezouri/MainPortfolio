@@ -1,0 +1,84 @@
+/* text color E7DACC*/
+
+/* Font imported from google*/
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+/* font-family: "Newsreader", serif; */
+body{
+    font-family: "Newsreader", serif;
+    color: #E7DACC;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #403732;
+}
+.mainContent{
+    
+    background: url(../img/coffeebean.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    min-width: 30em;
+    width: 100%;
+    padding: 7em 3em 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0px 20px black;
+}
+.imgBg{
+    width: 100%;
+    background: url(../img/cafe.png);
+    background-position: center;
+    background-size: cover;
+}
+/* header and navigation*/
+.logoText{
+    font-size: 3em;
+}
+.menu{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    display: block;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    color: #E7DACC;
+    box-sizing: border-box;
+    border-bottom: transparent 0.2em solid;
+    transition: 0.1s;
+}
+.menu li a:hover{
+    border-bottom: #E7DACC 0.5px solid;
+    transition: 0.5s;
+    
+}
+.omos{
+    height: 100%;
+}
+.omos h3{
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+.omos p{
+    margin-left: 4.3em;
+    line-height: 1.5em;
+    max-width: 30em;
+    
+}
+.footer{
+    height: 2em;
+    line-height: 2em;
+    color: #e7dacc;
+}

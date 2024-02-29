@@ -32,7 +32,7 @@ header {
     background-color: rgb(23, 23, 28);
     color: #e7e5df;
     position: fixed;
-    box-shadow: 0px 5px 10px rgb(23, 23, 28);
+    box-shadow: 0px 0px 10px rgb(23, 23, 28);
     z-index: 1;
 }
 
@@ -80,8 +80,14 @@ header {
     display: block;
     padding: 15px;
     font-size: 15px;
+    box-sizing: border-box;
+    transition: 0.2s ease-out;
 }
-
+.header a:hover{
+    text-shadow: 0 0 10px #fff;
+    transition: 0.2s ease-out;
+}
+    
 .header h1 {
     font-size: 20px;
 }
@@ -158,6 +164,9 @@ header {
 .portfolio .portfolioHeader{
     font-size: 4rem;
     letter-spacing: 5px;
+}
+.portfolio .portfolioHeader::before{
+    content: "  "; 
 }
 .portfolio .portfolioProjekter{
     font-size: 5rem;

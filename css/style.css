@@ -10,7 +10,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+.bold{
+    font-weight: bold;
+}
 body {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.15rem;
@@ -150,6 +152,29 @@ header {
 /* portfolio */
 .portfolio {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.portfolio .portfolioHeader{
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+.portfolio .portfolioProjekter{
+    font-size: 5rem;
+    letter-spacing: 6px;
+}
+.portfolio .portfolioTable tr{
+    border-bottom: 1px solid #fff;
+    padding: 25px 10px;
+}
+.portfolio .portfolioTable tr:last-of-type{
+    border-bottom: 0;
+}
+.portfolio .portfolioTable tr td:first-of-type{
+    
+}
+.portfolio .portfolioTable tr td{
+    padding: 20px 10px;
 }
 
 /* contact */

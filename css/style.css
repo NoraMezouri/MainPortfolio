@@ -49,10 +49,6 @@ header {
     font-size: 30px;
     position: relative;
     z-index: -1;
-    background: url(../images/cat3d.PNG);
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -112,10 +108,29 @@ header {
     /* background: url("../images/skov.jpg"); 
     background-size: cover;
     background-position: center;*/
-
     box-shadow: inset 0px 0px 300px rgb(23, 23, 28);
 }
-
+.home .homeBG{
+    box-sizing: border-box;
+    position: absolute;
+    width: 33.33333%;
+    filter: blur(5px);
+    height: 100%;
+    z-index: -1;
+    background: url(../images/Udklip.PNG);
+    background-position: center;
+    background-size: cover;
+}
+.home .homeBG:first-of-type{
+    left: 0;
+    background: url(../images/bg1.png);
+}
+.home .homeBG:last-of-type{
+    right: 0;
+    background: url(../images/bg2.png);
+}
+.home h2{
+}
 /* om mig */
 .about {
     display: flex;

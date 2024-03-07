@@ -45,27 +45,6 @@ header {
     
 }
 
-.home {
-    font-size: 30px;
-    position: relative;
-    z-index: -1;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0px 0px 5px black;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-}
-
-.home h2 {
-    color: #e7e5df;
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
 .header ul {
     display: flex;
 }
@@ -129,8 +108,36 @@ header {
     right: 0;
     background: url(../images/bg2.png);
 }
-.home h2{
+
+.home {
+    font-size: 30px;
+    position: relative;
+    z-index: -1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
 }
+
+.home h2 {
+    color: #e7e5df;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.home .whiteboxtext{
+    background-color: black;
+    color: white;
+    font-size: 10vw; 
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
 /* om mig */
 .about {
     display: flex;
@@ -271,20 +278,6 @@ header {
 
 .contact .info {
     border-image: linear-gradient(transparent 30%, transparent 80%) 10;
-}
-.contact .info:hover {
-    animation: contactLink 0.5s ease-in;
-    border-image: linear-gradient(#e7e5df 30%, transparent 80%) 10;
-}
-@keyframes contactLink {
-    0%{
-        border: solid 2px;
-        border-image: linear-gradient(transparent 30%, transparent 80%) 10;
-    }
-    100%{
-        border: solid 2px;
-        border-image: linear-gradient(#e7e5df 30%, transparent 80%) 10;
-    }
 }
 
 @media screen and (max-width: 700px) {

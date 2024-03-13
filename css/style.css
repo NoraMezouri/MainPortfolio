@@ -133,10 +133,11 @@ header {
     background-color: black;
     color: white;
     font-size: 10vw; 
+    font-weight: bold;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-    mix-blend-mode: multiply;
+    mix-blend-mode: lighten;
   }
 /* om mig */
 .about {

@@ -44,6 +44,9 @@ body{
     text-decoration: none;
     color: #fff;
 }
+.navwhite{
+    background: #fff;
+}
 .hero{
     display: flex;
     justify-content: space-between;

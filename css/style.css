@@ -153,6 +153,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .about .description {
@@ -161,6 +162,16 @@ header {
     margin-bottom: 70px;
 }
 
+.abilityList{
+    display: flex;
+    flex-direction: row;
+}
+.ability{
+    padding: 5px 15px;
+    background: #2a6bec;
+    border-radius: 5px;
+    margin-left: 10px;
+}
 .about .description figure {
     height: 200px;
     border: 1px solid black;
@@ -168,7 +179,7 @@ header {
     --s: 84px; /* control the size*/
         --c1: #d31847;
         --c2: #2a6bec;
-        --c3: #999999;
+        --c3: #222;
         
         --_g: 0 120deg,#0000 0;
         background:
@@ -186,13 +197,14 @@ header {
       
 }
 
-.about .description p {
+.about .description .ommig {
     max-width: 700px;
     line-height: 30px;
-    padding-left: 40px;
     font-size: clamp(0.5rem, 3vw, 1em);
 }
-
+.ommig_column{
+    padding-left: 40px;
+}
 .about tr {
     border-bottom: 1px solid #e7e5df;
 }

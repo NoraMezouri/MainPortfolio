@@ -158,13 +158,20 @@ header {
 
 .about .description {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 70px;
 }
 
 .abilityList{
     display: flex;
     flex-direction: row;
+}
+.abilityBox{
+    margin-top: 20px;
+}
+.abilityText{
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 .ability{
     padding: 5px 15px;

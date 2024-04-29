@@ -15,7 +15,6 @@ html {
 }
 body {
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.15rem;
     background: rgb(23, 23, 28);
     color: #e7e5df;
     overflow-x: hidden;
@@ -165,19 +164,24 @@ header {
 .abilityList{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 500px;
+    gap: 10px;
 }
 .abilityBox{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .abilityText{
     font-weight: bold;
     font-size: 1.3rem;
+    width: 100%;
+    margin-bottom: 10px ;
 }
 .ability{
     padding: 5px 15px;
     background: #2a6bec;
     border-radius: 5px;
-    margin-left: 10px;
 }
 .about .description figure {
     height: 200px;
@@ -358,7 +362,7 @@ header {
         margin-bottom: 20px;
     }
 
-    .about .description p {
+    .about .description .ommig {
         display: inline;
        /* font-size: 10px; */
         line-height: normal;

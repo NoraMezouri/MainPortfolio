@@ -2,12 +2,11 @@
 
 /* Font imported from google*/
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
-/* font-family: "Newsreader", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 body{
-    font-family: "Newsreader", serif;
+    
+  font-family: "Dosis", sans-serif;
     color: #E7DACC;
-    font-weight: 600;
     letter-spacing: 0.1em;
 }
 *{

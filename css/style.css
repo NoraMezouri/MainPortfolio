@@ -78,9 +78,11 @@ header {
     background-size: cover;
     background-position: center;*/
     overflow: hidden;
+    text-shadow: 0 0 10px #000;
 }
 .home p{
     line-height: 50px;
+    
 }
 .home .homeBG{
     box-sizing: border-box;
@@ -166,7 +168,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 500px;
+    max-width: 700px;
     gap: 10px;
 }
 .abilityBox{
@@ -182,6 +184,9 @@ header {
     padding: 5px 15px;
     background: #2a6bec;
     border-radius: 5px;
+}
+.redbg{
+    background: #d31847;
 }
 .about .description figure {
     height: 200px;

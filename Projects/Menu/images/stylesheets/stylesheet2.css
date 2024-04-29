@@ -1,0 +1,7 @@
+.wrapper{
+    background-color: gray;
+    max-width: 900px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}

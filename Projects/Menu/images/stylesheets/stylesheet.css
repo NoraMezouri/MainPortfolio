@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body{
+    font-family: ArcadeClassic;
+    font-size: 40px;
+}
+.menu {
+    background-color: #352738;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.menu ol li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ol li a{
+    display: inline-block;
+    font-family: ArcadeClassic;
+    background-color: #FFEEDC;
+    color: #FFEEDC;
+    border: rgba(0, 0, 0, 0) 5px solid;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.menu ol li a:hover{
+    background: repeating-linear-gradient( 45deg, #FFEEDC, #FFEEDC 5px, #352738 5px, #352738 10px );
+    border: 5px solid #FFEEDC;
+    color: #FFEEDC;
+}
+.menu ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* second menu */
+.menu2 {
+    background-color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.menu2 ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.menu2 ol a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Borel', cursive;
+    height: 30px;
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    
+}
+.menu2 ol li:last-of-type a{
+    margin-right: 0;
+}
+.menu2 a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+  }
+ .menu2 a:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* menu 3*/
+.menu3 {
+    background: url("../images/newspapers.jpg");
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+  .menu3 a{
+    text-decoration: none;
+    font-family: 'Lucida Sans typewriter', sans-serif;
+  }
+  .menu3 span{
+    color: #000;
+  }
+  .menu3 span::after{
+    content: "Start";
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"igj"; }
+    10% { content:"d10rl"; }
+    20% { content:"p6bh"; }
+    30% { content:"wxh"; }
+    40% { content:"isgke"; }
+    50% { content: "7sgbr"; }
+    60% { content: "sbq"; }
+    70% { content: "osng"; }
+    80% { content: "sn3wh"; }
+    90% { content: "d9sb"; }
+  }
+
+  .menu3 span:hover::after{
+    content: "Start";
+    animation: spin step-end;
+  }

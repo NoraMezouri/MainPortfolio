@@ -1,0 +1,217 @@
+
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Montserrat:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+body{
+  font-family: 'ArcadeClassic', sans-serif;
+    font-size: 40px;
+}
+.menu {
+    background-color: #352738;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.menu ol li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ol li a{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #FFEEDC;
+    color: #FFEEDC;
+    border: rgba(0, 0, 0, 0) 5px solid;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.menu ol li a:hover{
+    background: repeating-linear-gradient( 45deg, #FFEEDC, #FFEEDC 5px, #352738 5px, #352738 10px );
+    border: 5px solid #FFEEDC;
+    color: #FFEEDC;
+}
+.menu ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* second menu */
+.menu2 {
+    background-color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.menu2 ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.menu2 ol a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Borel', cursive;
+    height: 30px;
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    
+}
+.menu2 ol li:last-of-type a{
+    margin-right: 0;
+}
+.menu2 a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in;
+  }
+ .menu2 a:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* menu 3*/
+.menu3 {
+    background: url("../images/newspapersv2.png");
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.menu3 ol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+  .menu3 a{
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 40px 12px;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+  }
+  .menu3 span{
+   color: rgb(43, 43, 43);
+  }
+  .menu3 li:nth-of-type(1) span::after{
+    content: "Start";
+    animation: spin 1s linear infinite;
+  }
+  .menu3 li:nth-of-type(2) span::after{
+    content: "Start";
+    animation: spin2 1s linear infinite;
+  }
+  .menu3 li:nth-of-type(3) span::after{
+    content: "Start";
+    animation: spin3 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"igj";}
+    10% { content:"d10rl";}
+    20% { content:"p6bh";}
+    30% { content:"wxh";}
+    40% { content:"isgke";}
+    50% { content: "7sgbr"; }
+    60% { content: "sbq"; }
+    70% { content: "osng"; }
+    80% { content: "sn3wh"; }
+    90% { content: "d9sb"; }
+  }
+  @keyframes spin2 {
+    0% { content: "d9sb"; }
+    10% { content:"d10rl";}
+    20% { content: "7sgbr"; }
+    30% { content:"wxh";}
+    40% { content:"isgke";}
+    50% { content:"p6bh";}
+    60% { content: "dhj4b"; }
+    70% { content: "sn3wh"; }
+    80% { content: "osng"; }
+    90% { content:"igj";}
+  }
+  @keyframes spin3 {
+    0% { content:"sh3nk";}
+    10% { content:"d10rl";}
+    20% { content:"sku3";}
+    30% { content:"skh3";}
+    40% { content:"isgke";}
+    50% { content: "ty5j"; }
+    60% { content: "sbq"; }
+    70% { content: "osng"; }
+    80% { content: "s93hn"; }
+    90% { content: "sjn3"; }
+  }
+  .menu3 ol li span:hover{
+    letter-spacing: -5px;
+  }
+
+  .menu3 ol li:first-of-type span:hover:after{
+    content: "Link 1";
+    animation: spin step-end;
+  }
+  .menu3 ol li:nth-of-type(2) span:hover:after{
+    content: "Link 2";
+    animation: spin step-end;
+  }
+  .menu3 ol li:last-of-type span:hover:after{
+    content: "Link 3";
+    animation: spin step-end;
+  }
+
+  /* menu 4 */
+.menu4{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: grey;
+}
+
+  .menu4 ol{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+.menu4 a{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  background: grey;
+  background: linear-gradient(to left, grey 50%, rgb(204, 75, 204) 50%) right;
+  background-size: 200%;
+  transition: .3s linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.menu4 a:hover{
+  background-position: left;
+}

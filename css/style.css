@@ -247,7 +247,6 @@ header {
 .portfolio .portfolioProjekter{
     font-size: 5rem;
     letter-spacing: 6px;
-    text-shadow: -2px -2px 0px #d31847,2px 2px 0px #2a6bec ;
 }
 .portfolio .portfolioTable tr{
     border-bottom: 1px solid #fff;
@@ -323,6 +322,7 @@ header {
 
 .contact span {
     font-size: clamp(0.5rem, 2vw, 1.3rem);
+    
 }
 
 .contact a {
@@ -330,10 +330,13 @@ header {
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 2rem);
     display: block;
+    transition: 0.5s;
     padding: 0px 20px 20px 20px;
 }
-
-
+.contact a:hover{
+    background: #d31847;
+    transition: 0.5s;
+}
 .contact .info {
     border-image: linear-gradient(transparent 30%, transparent 80%) 10;
 }

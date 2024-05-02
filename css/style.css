@@ -247,6 +247,8 @@ header {
 .portfolio .portfolioProjekter{
     font-size: 5rem;
     letter-spacing: 6px;
+    padding: 0px 10px 10px 0px;
+    /* background: linear-gradient(transparent 0%, transparent 50%, #d31847 50%, #d31847 100%); */
 }
 .portfolio .portfolioTable tr{
     border-bottom: 1px solid #fff;
@@ -271,7 +273,7 @@ header {
     background: white;
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: center;deg
 }
 .contact form{
     width: 50%;

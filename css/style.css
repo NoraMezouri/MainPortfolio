@@ -332,12 +332,7 @@ header {
     text-decoration: none;
     font-size: clamp(1rem, 4vw, 2rem);
     display: block;
-    transition: 0.5s;
     padding: 0px 20px 20px 20px;
-}
-.contact a:hover{
-    background: #d31847;
-    transition: 0.5s;
 }
 .contact .info {
     border-image: linear-gradient(transparent 30%, transparent 80%) 10;

@@ -27,7 +27,9 @@ body {
     overflow-x: hidden;
     background: #000;
     
-    background: radial-gradient(ellipse at top left, #1C2542 0%, #000 80%);
+    background: radial-gradient(ellipse at top left, #1C2542 0%, transparent 80%,)
+    
+    ;
 }
 .wrapper {
     max-width: 1170px;

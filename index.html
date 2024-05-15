@@ -10,10 +10,12 @@
     <link href="css/style.css" rel="stylesheet">
 
     <script src="links.js" defer></script>
+    <script src="typeEffect.js" defer></script>
 
 </head>
 
-<body>
+<body onload="redTypeWriter()">
+    <img class="xpatternB" src="images/xpatt.png">
     <header>
         <div class="wrapper header">
             <a href="#home">
@@ -35,14 +37,14 @@
     </header>
 
     <div class="home" id="home">
+        <!-- <div class="homeBG"></div>
         <div class="homeBG"></div>
-        <div class="homeBG"></div>
-        <div class="homeBG"></div>
-        <h2>Velkommen til min<br>
-            <div class="whiteboxtext">Portefølje</div>
-        </h2>
+        <div class="homeBG"></div> -->
+        <figure class="myimg">
+            <img src="#" alt="Image of Nora Mezouri">
+        </figure>
         <p>
-            Jeg er uddannet <span class="red">webudvikler</span><br>og <span class="blue">digital media elev</span>
+            Jeg er uddannet <span class="redType" id="redType"></span><br>og <span class="blueType">digital media elev</span>
         </p>
     </div>
     <div class="about wrapper" id="about">

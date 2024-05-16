@@ -13,8 +13,8 @@
     transform: translate(-50%,0);
     top: 0;
     left: 50%;
-    width: 100svw;
-    
+    min-width: 100%;
+    z-index: -1;
 }
 html {
     scroll-behavior: smooth;
@@ -82,22 +82,48 @@ header {
 }
 
 /* home*/
-.myimg{
-    width: 200px;
+.hero{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
-.myimg img{
-    width: 100%;
+.heroDesc{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
 }
-.home {
-    * background: url("../images/skov.jpg"); 
-    background-size: cover;
-    background-position: center;*/
-    overflow: hidden;
-    text-shadow: 0 0 10px #000;
+.heroLinks{
+    align-self: center;
+display: flex;
+justify-content:space-between;
+width: 400px;
 }
-.home p{
+.heroLinks > *{
+    align-self: center;
+}
+.heroMail{
+ font-size: 1rem;
+ background: white;
+ padding: 10px;
+ border-radius: 10px;
+ color: black;
+ text-shadow: none;
+ text-decoration: none;
+ 
+}
+.betweenLine{
+width: 5px;
+height: 50px;
+background: white;
+border-radius: 20%;
+}
+
+.heroHeader{
+    font-size: 2rem;
     line-height: 50px;
-    
+    margin-bottom: 30px;
+    margin-top: 100px;
 }
 .lineAni:after{
     content: " ";
@@ -107,7 +133,6 @@ header {
     width: 5px;
     animation: lineVisi 0.7s ease;
     animation-iteration-count: infinite;
-
 }
 @keyframes lineVisi {
     0%{
@@ -123,44 +148,9 @@ header {
         background: white;
     }
 }
-
-.home .homeBG{
-    box-sizing: border-box;
-    position: absolute;
-    width: 33.33333%;
-    filter: blur(5px);
-    height: 100%;
-    z-index: -1;
-    background: url(../images/Udklip.PNG);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.home .homeBG:first-of-type{
-    left: 0;
-    background: url(../images/bg1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.home .homeBG:last-of-type{
-    right: 0;
-    background: url(../images/lizard.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .home {
-    font-size: 30px;
-    position: relative;
-    z-index: -1;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
+    width: 100%;display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
 }
 .home .redType{
     color: #d31847;
@@ -172,23 +162,6 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 }
-.home h2 {
-    color: #e7e5df;
-    font-size: 60px;
-    margin-bottom: 10px;
-    
-}
-
-.home .whiteboxtext{
-    background-color: black;
-    color: white;
-    font-size: 10vw; 
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-    mix-blend-mode: lighten;
-  }
 /* om mig */
 .about {
     display: flex;

@@ -26,10 +26,9 @@ body {
     color: #e7e5df;
     overflow-x: hidden;
     background: #000;
+    background:radial-gradient(ellipse at top left, #1C2542 20%, #000 60%, #382e31
+    90%);
     
-    background: radial-gradient(ellipse at top left, #1C2542 0%, transparent 80%,)
-    
-    ;
 }
 .wrapper {
     max-width: 1170px;
@@ -82,7 +81,12 @@ header {
 }
 
 /* home*/
-
+.myimg{
+    width: 200px;
+}
+.myimg img{
+    width: 100%;
+}
 .home {
     /* background: url("../images/skov.jpg"); 
     background-size: cover;
@@ -342,7 +346,26 @@ header {
     padding: 0px 20px 20px 20px;
 }
 .contact .info {
-    border-image: linear-gradient(transparent 30%, transparent 80%) 10;
+    border: 3px solid;
+    border-image: linear-gradient(transparent, transparent 80%) 10;
+    transition: 0.3s;
+    border-image-outset: 20px;
+}
+.contact .info:hover{
+    animation: bgLink 0.3s ease;
+    border-image: linear-gradient(white, transparent 80%) 10;
+    border-image-outset: 0px;
+}
+@keyframes bgLink {
+    from{
+    border-image: linear-gradient(transparent, transparent 80%) 10;
+    border-image-outset: 20px;
+    }
+
+    to{
+    border-image: linear-gradient(white, transparent 80%) 10;
+    border-image-outset: 0px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -437,29 +460,6 @@ header {
 }
 */
 /* animations */
-
-.ommig, figure {
-    animation-timeline: view(block 60% 0%);
-    animation-name: change;
-    animation-fill-mode: both;
-    animation-duration: 1ms;
-}
-.figure{
-    animation-delay: 2s;
-}
-
-@keyframes change {
-    from {
-        color: white;
-        transform: translateX(-40px);
-        filter: blur(5px);
-    }
-
-    to {
-        color: white;
-        opacity: 1;
-    }
-}
 .smallimg{
     width: 300px;
 }

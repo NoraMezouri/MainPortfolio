@@ -24,7 +24,7 @@ body {
     color: #e7e5df;
     overflow-x: hidden;
     background: #000;
-    background:radial-gradient(ellipse at top left, #1C2542 20%, #000 60%, #68332f
+    background:radial-gradient(ellipse at top left, #1C2542 0%, #000 70%, #68332f
     100%);
     
 }

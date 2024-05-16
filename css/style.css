@@ -13,6 +13,7 @@
     transform: translate(-50%,0);
     top: 0;
     left: 50%;
+    width: 100svw;
     
 }
 html {
@@ -166,7 +167,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 }
-.home .blue{
+.home .blueType{
     color: #2a6bec;
     font-weight: bold;
     text-transform: uppercase;

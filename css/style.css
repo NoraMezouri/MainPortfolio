@@ -13,6 +13,7 @@
     left: 50%;
     min-width: 100%;
     z-index: -1;
+    opacity: 0.3;
 }
 html {
     scroll-behavior: smooth;
@@ -22,11 +23,9 @@ html {
 }
 body {
     font-family: "Hind Guntur", sans-serif;
-    color: #e7e5df;
+    color: #000;
     overflow-x: hidden;
-    background: #000;
-    background:radial-gradient(ellipse at top left, #1C2542 0%, #000 70%, #68332f
-    100%);
+    background: white;
     
 }
 .wrapper {
@@ -106,7 +105,7 @@ width: 400px;
 }
 .heroMail{
  font-size: 1rem;
- background: white;
+ background: Black;
  padding: 10px;
  border-radius: 10px;
  color: black;
@@ -118,7 +117,7 @@ width: 400px;
     box-sizing: border-box; 
 }
 .heroLinks a i{
-    color: white;
+    color: Black;
 
 }
 .heroLinks a:last-of-type{
@@ -127,7 +126,7 @@ width: 400px;
 .betweenLine{
 width: 2px;
 height: 50px;
-background: white;
+background: Black;
 }
 
 .heroHeader{
@@ -142,7 +141,7 @@ background: white;
 .lineAni:after{
     content: " ";
     display: inline-block;
-    background: white;
+    background: Black;
     height: 30px;
     width: 5px;
     animation: lineVisi 0.7s ease;
@@ -156,10 +155,10 @@ background: white;
         background: none;
     }
     51%{
-        background: white;
+        background: Black;
     }
     100%{
-        background: white;
+        background: Black;
     }
 }
 .home {
@@ -167,12 +166,12 @@ background: white;
     justify-content: center;
 }
 .home .redType{
-    color: #d31847;
+    color: #6d1e32;
     font-weight: bold;
     text-transform: uppercase;
 }
 .home .blueType{
-    color: #2a6bec;
+    color: #1f3b74;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -278,7 +277,7 @@ background: white;
     border-bottom: 1px dotted #fff;
     padding: 25px 10px;
 
-    background: linear-gradient(to left, white 50%,#d31847 50%,#d31847 100%) right;
+    background: linear-gradient(to left, Black 50%,#d31847 50%,#d31847 100%) right;
     background-size: 200%;
     transition: 0.3s linear;
     color: transparent;
@@ -302,7 +301,7 @@ background: white;
 /* contact */
 /*
 .contact{
-    background: white;
+    background: Black;
     display: flex;
     justify-content:center;
     align-items: center;deg
@@ -310,7 +309,7 @@ background: white;
 .contact form{
     width: 50%;
     background: rgb(23, 23, 28);
-    color: white;
+    color: Black;
     box-sizing: border-box;
     border-radius: 20px;
     padding: 20px;

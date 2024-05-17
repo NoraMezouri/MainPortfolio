@@ -89,6 +89,8 @@ header {
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 50px;
+    width: 600px;
+    align-self: center;
 }
 .heroLinks{
     align-self: center;
@@ -108,12 +110,15 @@ width: 400px;
  text-shadow: none;
  text-decoration: none;
 }
-.heroLinks i{
-    padding-right: 20px;
-    box-sizing: border-box;
+.heroLinks a{
+    margin-right: 20px;
+    box-sizing: border-box; 
 }
-.heroLinks i:last-of-type{
-    padding-right: 0;
+.heroLinks a i{
+    color: white;
+}
+.heroLinks a:last-of-type{
+    margin-right: 0;
 }
 .betweenLine{
 width: 5px;
